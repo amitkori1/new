@@ -16,7 +16,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-*/
+
 
 const Asena = require('../events')
 const { MessageType } = require('@adiwajshing/baileys')
@@ -73,39 +73,38 @@ if (cn.WORKTYPE == 'private') {
       },
     )
 
-    Asena.addCommand({ pattern: 'tiktok ?(.*)', fromMe: true, desc: Tlang.TİKTOK }, async (message, match) => {
+    Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: true, desc: Lang.IG_DESC}, async (message, match) => {
 
         const userName = match[1]
 
-        if (!userName) return await message.client.sendMessage(message.jid, Tlang.NEED, MessageType.text)
+        if (!userName) return await message.sendMessage(errorMessage(Lang.NEED_WORD))
 
-        await message.client.sendMessage(message.jid, Tlang.DOWN, MessageType.text)
+        await message.sendMessage(infoMessage(Lang.DOWNLOAD))
 
         await axios
-          .get(`https://api.xteam.xyz/dl/tiktok?url=${userName}&APIKEY=ab9942f95c09ca89`)
+          .get(`https://api-anoncybfakeplayer.herokuapp.com/igdown?url=${userName}`)
           .then(async (response) => {
             const {
-              uploaded_at,
-              caption,
-              url_nwm,
-              created_at,
-              user,
-              stats,
-              music,
-            } = response.data.result
+              url,
+              type,
+            } = response.data.result[0]
 
-            const profileBuffer = await axios.get(url_nwm, {
-              responseType: 'arraybuffer',
-            })
+            const profileBuffer = await axios.get(url, {responseType: 'arraybuffer'})
 
-            const msg = `*${Tlang.CAPTİON}* ${caption} \n*${Tlang.USERNAME}* ${user.username} \n*${Tlang.NAME}* ${user.name} \n*${Tlang.LİKE}* ${stats.likes} \n*${Tlang.COMM}* ${stats.comments} \n*${Tlang.VİEW}* ${stats.play} \n*${Tlang.SHARE}* ${stats.shares} \n*${Tlang.MUSİC}* ${music.title} \n*${Tlang.M_AUT}* ${music.author} `
+            const msg = `${type}`
 
-            await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
-              caption: msg,
-            })
-          })
+            if (msg === 'image') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+            caption: "Made By WhatsAsenaPublic"
+          })}
+		 	 
+            if (msg === 'video') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
+            caption: "Made By WhatsAsenaPublic"
+           })}
+	
+        
+      })
           .catch(
-            async (err) => await message.client.sendMessage(message.jid, Tlang.NOT + userName, MessageType.text),
+            async (err) => await message.sendMessage(errorMessage(Lang.LINK_INVAILD)),
           )
       },
     )
@@ -155,40 +154,39 @@ else if (cn.WORKTYPE == 'public') {
       },
     )
 
-    Asena.addCommand({ pattern: 'tiktok ?(.*)', fromMe: false, desc: Tlang.TİKTOK }, async (message, match) => {
+    Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: false, desc: Lang.IG_DESC}, async (message, match) => {
 
         const userName = match[1]
 
-        if (!userName) return await message.client.sendMessage(message.jid, Tlang.NEED, MessageType.text)
+        if (!userName) return await message.sendMessage(errorMessage(Lang.NEED_WORD))
 
-        await message.client.sendMessage(message.jid, Tlang.DOWN, MessageType.text)
+        await message.sendMessage(infoMessage(Lang.DOWNLOAD))
 
         await axios
-          .get(`https://api.xteam.xyz/dl/tiktok?url=${userName}&APIKEY=ab9942f95c09ca89`)
+          .get(`https://api-anoncybfakeplayer.herokuapp.com/igdown?url=${userName}`)
           .then(async (response) => {
             const {
-              uploaded_at,
-              caption,
-              url_nwm,
-              created_at,
-              user,
-              stats,
-              music,
-            } = response.data.result
+              url,
+              type,
+            } = response.data.result[0]
 
-            const profileBuffer = await axios.get(url_nwm, {
-              responseType: 'arraybuffer',
-            })
+            const profileBuffer = await axios.get(url, {responseType: 'arraybuffer'})
 
-            const msg = `*${Tlang.CAPTİON}* ${caption} \n*${Tlang.USERNAME}* ${user.username} \n*${Tlang.NAME}* ${user.name} \n*${Tlang.LİKE}* ${stats.likes} \n*${Tlang.COMM}* ${stats.comments} \n*${Tlang.VİEW}* ${stats.play} \n*${Tlang.SHARE}* ${stats.shares} \n*${Tlang.MUSİC}* ${music.title} \n*${Tlang.M_AUT}* ${music.author} `
+            const msg = `${type}`
 
-            await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
-              caption: msg,
-            })
-          })
+            if (msg === 'image') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+            caption: "Made By WhatsAsenaPublic"
+          })}
+		 	 
+            if (msg === 'video') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
+            caption: "Made By WhatsAsenaPublic"
+           })}
+	
+        
+      })
           .catch(
-            async (err) => await message.client.sendMessage(message.jid, Tlang.NOT + userName, MessageType.text),
+            async (err) => await message.sendMessage(errorMessage(Lang.LINK_INVAILD)),
           )
       },
     )
-}
+} */
