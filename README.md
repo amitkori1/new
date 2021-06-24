@@ -12,15 +12,15 @@
 
 **[@Phaticusthiccy](https://github.com/Phaticusthiccy)**
 
-**[@TOXIC-DEVIL](https://github.com/TOXIC-DEVIL)**
+**[@AK-KADDU](https://github.com/AK-KADDU)**
 
 ### What Is WhatsAsenaPublic
 
-**▪︎ The [Public Version](https://github.com/TOXIC-DEVIL/WhatsAsenaPublic) Of [WhatsAsenaDuplicated](https://github.com/Phaticusthiccy/WhatsAsenaDuplicated) [ First Release which Deployed On Heroku ] 🐺**
+**▪︎ The [Public Version](https://github.com/ak-kaddu/new.git) Of [WhatsAsenaDuplicated](https://github.com/Phaticusthiccy/WhatsAsenaDuplicated) [ First Release which Deployed On Heroku ] 🐺**
 
 **▪︎ You Have the All Rights To Re-Edit This Ropo**
 
-**▪︎ Made By [TOXIC DEVIL](https://github.com/TOXIC-DEVIL)**
+**▪︎ Made By [AK-KADDU](https://github.com/AK-KADDU)**
 
 **▪︎ Added More Commands**
 
@@ -28,7 +28,7 @@
 
 ### How To Set Up WhatsAsenaPublic
 
-**¤ To Set Up WhatsAsenaPublic Just [Click Here](https://github.com/TOXIC-DEVIL/WhatsAsenaPublic#Simple-Method)**
+**¤ To Set Up WhatsAsenaPublic Just [Click Here](https://github.com/AK-KADDU#Simple-Method)**
 
 ```
 Asena; Asena UserBot are names representing WhatsAsena software, they can be used interchangeably in the rest of the article.
@@ -64,11 +64,11 @@ the user is responsible.
 ```
 
 <div align = "center">
-  <img src = "https://i.ibb.co/9H56Ct5/20210305-083215.jpg" width = "200" height = "200">
+  <img src = "https://i.ibb.co/XxS3zyH/FB-IMG-16228193347601278.jpg" width = "200" height = "200">
   <h1> 🐺 WhatsAsenaPublic </h1>
 </div>
 <p align = "center">
-    WhatsAsenaPublic - Made By Toxic Devil.
+    WhatsAsenaPublic - Made By AK-KADDU.
     <br>
 
 ### Show Your Support
@@ -82,11 +82,11 @@ the user is responsible.
 [![Run on Repl.it](https://repl.it/badge/github/TOXIC-DEVIL/WhatsAsenaPublic)](https://replit.com/@TOXICDEVIL/WhatsAsena-QR)
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TOXIC-DEVIL/WhatsAsenaPublic)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ak-kaddu/new.git)
 
 ### The Hard Method
 ``` js
-$ git clone https://github.com/TOXIC-DEVIL/WhatsAsenaPublic.git
+$ git clone https://github.com/ak-kaddu/new.git
 $ cd WhatsAsenaPublic
 $ npm i @adiwajshing/baileys
 $ npm i chalk
