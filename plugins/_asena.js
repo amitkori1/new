@@ -49,7 +49,7 @@ if (Config.WORKTYPE == 'private') {
             );
         
             await message.client.sendMessage(
-                message.jid,'● *WhatsAsena Private By Toxic Devil* ●\n\n' + CMD_HELP, MessageType.text
+                message.jid,'● *WhatsAsena Private by urmum* ●\n\n' + CMD_HELP, MessageType.text
             );    
         } else {
 
@@ -85,7 +85,7 @@ if (Config.WORKTYPE == 'private') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'● *WhatsAsena Private By Toxic Devil* ●\n\n' + CMD_HELP, MessageType.text
+                message.jid,'● *WhatsAsena Private By urmum* ●\n\n' + CMD_HELP, MessageType.text
             );
         }
     }));
@@ -126,7 +126,7 @@ else if (Config.WORKTYPE == 'public') {
             );
         
             await message.client.sendMessage(
-                message.jid,'● *WhatsAsena Public By Toxic Devil* ●\n\n' + CMD_HELP, MessageType.text
+                message.jid,'● *WhatsAsena Public By jijaji* ●\n\n' + CMD_HELP, MessageType.text
             );    
         } else {
 
@@ -162,7 +162,7 @@ else if (Config.WORKTYPE == 'public') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'● *WhatsAsena Public By Toxic Devil* ●\n\n' + CMD_HELP, MessageType.text
+                message.jid,'● *WhatsAsena Public By jijaji* ●\n\n' + CMD_HELP, MessageType.text
             );
         }
     }));
