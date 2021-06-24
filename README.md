@@ -95,7 +95,7 @@ $ node qr.js
 
 ##
 
-## Developer
+## SPECIAL THANKS
 
 | [![TOXIC DEVIL](https://github.com/TOXIC-DEVIL.png?size=100)](https://github.com/TOXIC-DEVIL) |
 |----|
