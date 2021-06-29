@@ -1,9 +1,9 @@
 {
     "name": "WhatsAsenaPublic",
-    "description": "WhatsAsenaPublic - Made By TOXIC DEVIL.",
+    "description": "WhatsAsenaPublic - Made By kaddu.",
     "logo": "https://i.ibb.co/9H56Ct5/20210305-083215.jpg",
     "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
-    "repository": "https://github.com/TOXIC-DEVIL/WhatsAsenaPublic",
+    "repository": "https://github.com/ak-kaddu/new",
     "website":   "https://t.me/phaticusthiccy",
     "success_url": "https://t.me/AsenaSupport",
     "stack": "container",
@@ -24,7 +24,7 @@
         "HANDLERS": {
             "description": "Prefix For commands [ You Can Type Any Symbol Here ].",
             "required": true,
-            "value": "^[.]"
+            "value": "^[,]"
         },
         "SEND_READ": {
             "description": "Görüldü atmak istiyorsanız true yazın. Write true if you want to throw seen.",
@@ -89,9 +89,9 @@
             "value": "default"
         },
         "ALIVE_LOGO": {
-            "description": "Customizable Alive Logo! Use => https://i.ibb.co/hdb4VFH/IMG-20210516-WA0008.jpg, to change back.",
+            "description": "Customizable Alive Logo! Use => https://i.ibb.co/XxS3zyH/FB-IMG-16228193347601278.jpg, to change back.",
             "required": true,
-            "value": "https://i.ibb.co/hdb4VFH/IMG-20210516-WA0008.jpg"
+            "value": "https://i.ibb.co/XxS3zyH/FB-IMG-16228193347601278.jpg"
         },
         "ALIVE_MESSAGE": {
             "description": "Customizable Alive Message! Use => default, to change back.",
